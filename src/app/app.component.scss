@@ -1,0 +1,35 @@
+a {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #6e9da0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    margin: 0 auto;
+
+    li {
+      margin: .5rem 1rem;
+      padding: .2rem 1rem;
+
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.container-fluid {
+  text-align: right;
+}
+
+li:hover {
+  background-color: #1e2b46;
+  border-radius: .5rem;
+}
