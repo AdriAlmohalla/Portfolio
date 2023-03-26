@@ -10,6 +10,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CurriculumComponent,
     ProjectComponent,
     HomeComponent,
-    ResumeComponent
+    ResumeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
