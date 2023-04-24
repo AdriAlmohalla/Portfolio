@@ -1,0 +1,79 @@
+.about-me {
+  margin: 3rem .5rem;
+
+  .image-princ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .text {
+    padding: 1rem;
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: -10px 10px 0px 0px #6e9da0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+}
+
+img:hover {
+  box-shadow: 0px 0px 0px 0px #6e9da0;
+  transform: scale(1.1);
+}
+
+.tittle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  .tittle {
+    margin: 1rem 0;
+  }
+}
+
+.tittle {
+  margin: auto 0;
+}
+
+fa-icon {
+  font-size: 2.5rem;
+  color: #6e9da0;
+}
+
+.technology-card {
+  border: 3px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+
+  span {
+    color: #6e9da0;
+    display: block;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+}
+
+.technology,
+.education,
+.work {
+  margin: 4rem 0;
+}

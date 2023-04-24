@@ -11,6 +11,10 @@ import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
+import { LanguageSelectorComponent } from './language-selector/language-selector.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,16 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectComponent,
     HomeComponent,
     ResumeComponent,
-    FooterComponent
+    FooterComponent,
+    LanguageSelectorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

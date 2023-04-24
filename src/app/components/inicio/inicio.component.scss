@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 73.375px);
-  width: 100vw;
+  min-height: calc(100vh - 92.38px);
+  min-width: 100vw;
+  overflow: hidden;
 }
 
 .imagen-principal-mobile {
@@ -72,6 +73,11 @@ fa-icon:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+  .landing {
+    margin-top: 3rem;
+  }
+
   .imagen-principal-mobile {
     display: block;
   }

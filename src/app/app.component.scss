@@ -33,3 +33,18 @@ li:hover {
   background-color: #1e2b46;
   border-radius: .5rem;
 }
+
+.language-toggle {
+  margin: 0;
+  padding: .2rem 1rem;
+}
+
+.language-selector:hover {
+  background-color: transparent;
+}
+
+.nav-item-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
