@@ -38,7 +38,8 @@
             </ng-container>
 
             <li class="nav-item nav-item-centered language-selector">
-              <app-language-selector (languageChanged)="onLanguageChanged($event)"></app-language-selector>
+              <app-language-selector [selectedLanguage]="selectedLanguage"
+                (languageChanged)="onLanguageChanged($event)"></app-language-selector>
             </li>
           </ul>
 

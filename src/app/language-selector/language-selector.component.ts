@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-language-selector',
@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class LanguageSelectorComponent implements OnInit {
   @Output() languageChanged = new EventEmitter<string>();
+  @Input() selectedLanguage = 'ES';
   currentLanguage = 'ES';
 
   constructor() { }
@@ -15,7 +16,7 @@ export class LanguageSelectorComponent implements OnInit {
   }
 
   toggleLanguage(): void {
-    this.currentLanguage = this.currentLanguage === 'ES' ? 'EN' : 'ES';
-    this.languageChanged.emit(this.currentLanguage);
+    this.selectedLanguage = this.selectedLanguage === 'ES' ? 'EN' : 'ES';
+    this.languageChanged.emit(this.selectedLanguage);
   }
 }
